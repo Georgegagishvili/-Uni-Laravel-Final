@@ -1,0 +1,46 @@
+
+
+
+.paginations{
+	display: flex;
+	justify-content: center;
+	transition: 0.5s;
+}
+.pagination li{
+	display: inline-block;
+	border:1px solid #3a3b3c;
+	border-radius: 5px;
+	transition: 0.5s;
+	padding:5px;
+}
+.pagination li:hover{
+	background: #ececec;
+	color:#fc077b;
+	transition: 0.3s;
+}
+.pagination a:hover{
+	transition: 0.5s;
+	color:#fc077b;
+
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+	transition: 0.2s;
+	color:#fc077b;
+}
+
+.pagination{
+	background: #1e1e1f;
+	border-radius: 10px;
+	padding: 5px;
+	color:white;
+	font-family: "Poppins";
+	font-size: 25px;
+	transition: 0.1s;
+
+}

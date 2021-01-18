@@ -1,0 +1,117 @@
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header p{
+	padding-bottom: 10px;
+	margin-top:3rem;
+	font-size: 35px;
+	color:white;
+	font-family: "Raleway";
+	font-weight: bold;
+	border-bottom: 1px solid #fc077b;
+	transition: 0.7s;
+}
+.header p:hover{
+	color:#fc077b;
+	transition: 0.7s;
+	border-bottom:1px solid #fc077b;
+}
+.order_middle_panel{
+	transition: 0.5s;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.order_middle_panel h2{
+	color:white;
+	transition: 0.3s;
+	font-family: "Poppins";
+	font-size: 20px;
+	line-height: 3;
+}
+.order_middle_panel h2:hover{
+	transition: 0.5s;
+	color:#fed700;
+}
+.order_middle_panel h3{
+	color:white;
+	transition: 0.3s;
+	font-family: "Poppins";
+	font-size: 20px;
+}
+
+
+
+.order_form_wrapper{
+	margin-top: 2rem;
+	display: flex;
+	border-radius: 15px;
+	justify-content: center;
+	transition: 0.5s;
+
+}
+.order_place_form{
+	background: #1e1e1f;
+	display: flex;
+	width:40vw;
+	height: 50vh;
+	border-radius: 15px;
+	flex-direction: column;
+	align-items: center;
+	padding-top:3vw;
+	transition: 0.5s;
+}
+.order_place_form:hover{
+	background: #0b3030;
+}
+.order_place_form label{
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	color:white;
+	font-family: "Poppins";
+	font-size: 23px;
+	border-bottom: 1px solid none;
+	transition: 0.5s;
+}
+.order_place_form label:hover{
+	border-bottom:1px solid #ff4560;
+	transition: 0.5s;
+
+}
+.order_place_form input{
+	color:white;
+	padding-left: 10px;
+	font-family: inherit;
+	outline: none !important;
+	border:none;
+	border-radius: 15px;
+	background: #303031;
+	width:15vw;
+	transition: 0.2s;
+	height: 4vh;
+}
+.order_place_form input:focus{
+	background:#ff4560;
+	transition:0.5s; 
+}
+.order_form_wrapper button{
+	margin-top:2rem;
+	width:10vw;
+	height: 6vh;
+	font-size: 19px;
+	border-radius: 30px;
+	border:none;
+	background: #242526;
+	color:white;
+	font-family: "Raleway";
+	outline: none !important;
+}
+.order_form_wrapper button:hover{
+	background: #ff4560;
+	transition: 0.5s;
+	color: #fed700;
+}

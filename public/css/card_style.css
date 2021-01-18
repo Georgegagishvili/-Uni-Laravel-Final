@@ -1,0 +1,112 @@
+.card-list{
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  transition: 0.5s;
+  margin:20px;
+  border-radius: 15px;
+  background: white;
+  flex-direction: row;
+  display: flex;
+  width:500px;
+  height: 260px;
+  background: #242526;
+  border-radius: 10px 10px;
+}
+.card:hover{
+  transition: 1s;
+  background: #2c2e30;
+  width:550px;
+}
+.card-left{
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;  
+
+}
+.card-buttons{
+  margin-bottom: 20px;
+  margin-top:10px;
+}
+.card-left button{
+  border:none;
+  background: #3a3b3c;
+  opacity: 0.5;
+  z-index: -1;
+  font-family: "Poppins";
+  font-weight: 500;
+  color:white;
+  padding:10px;
+  font-size: 17px;
+  border-radius: 8px;
+  transition: 0.6s;
+}
+.card-left button:hover{
+  transition: 0.5s;
+  opacity: 1;
+  background: #ec4176;
+  color:#fed700;
+}
+
+.card-left img{
+  width:300px;
+  padding:10px;
+  height: 180px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.card-left img:hover{
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.card-right{
+  border-radius: 15px;
+  padding-top:13px;
+  padding-bottom:30px;
+  display: flex;
+  flex-direction: column;
+  width:auto;
+  overflow:hidden;
+}
+.card-category-name{
+  font-family: "Poppins";
+  font-size: 15px;
+  color:#ec4176;
+}
+.card-right h2{
+  font-family: "Poppins";
+  font-size: 28px;
+  color:white;
+  transition: 0.7s;
+  opacity: 0.95;
+}
+.card-right h2:hover{
+  transition: 0.7s;
+  opacity: 1;
+  color:#fed700;
+}
+.card-right span{
+  font-family: "Poppins";
+  font-size: 26px;
+  color:#ec4176;
+}
+.card-description{
+  font-family: "Poppins";
+  font-size:17px;
+  overflow:hidden;
+  white-space: pre-wrap;
+  color:white;
+  transition: 0.5s;
+}
+.card-description:hover{
+  transition:1s;
+  color:#fed700;
+}

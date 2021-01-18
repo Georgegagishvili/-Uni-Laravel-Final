@@ -1,0 +1,171 @@
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+.header p{
+	padding-bottom: 10px;
+	margin-top:3rem;
+	font-size: 35px;
+	color:white;
+	font-family: "Raleway";
+	font-weight: bold;
+	border-bottom: 1px solid #fc077b;
+	transition: 0.7s;
+}
+.header p:hover{
+	color:#fc077b;
+	transition: 0.7s;
+	border-bottom:1px solid #fc077b;
+}
+
+
+
+.orders_table_wrapper{
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+}
+.orders_table_wrapper table{
+	width:60vw;
+}
+.table_head{
+	transition: 0.5s;
+	background: #141418;
+	color:white;
+	border-radius: 15px;
+	width:max-content;
+	font-family: "Poppins";
+	font-size: 2em;
+}
+.table_head th{
+	padding: 1rem;
+}
+.table_head .column1{
+	border-radius: 20px 0px 0px 0px;
+	border-left: none;
+}
+.table_head .column4{
+	border-radius: 0px 20px 0px 0px;
+}
+
+
+
+.orders_table_wrapper td{
+	padding: 10px;
+	color:white;
+	transition: 0.2s;
+	border:1px solid #141418;
+	font-family: "Raleway";
+	font-size: 20px;
+}
+.orders_table_wrapper td:hover{
+	color:#ff4560;
+	transition: 0.5s;
+}
+
+.table_body .column2, .column3, .column4{
+	text-align: center;
+}
+.table_body tr:nth-child(1n+1)
+{
+	transition: 0.5s;
+	background: #23232e;
+}
+.table_body tr:nth-child(2n)
+{
+	transition: 0.5s;
+	background: #545455;
+}
+.table_body .column2 button{
+	border:none;
+	outline: none !important;
+	font-size: 18px;
+	border-radius: 20px;
+	font-weight: bold;
+	font-family: "Poppins";
+}
+
+.order_plus{
+	background:none;
+	color:#fed700;
+}
+.order_minus{
+	background: none;
+	color: #fc077b;
+}
+
+.order_plus:hover{
+	background:none;
+	color:#30cb00;
+	transition: 0.3s;
+}
+.order_minus:hover{
+	background: none;
+	color: #0099ff;
+	transition: 0.3s;
+}
+
+.table_body tr:hover{
+	background: #23232e;
+	transition: 0.5s;
+}
+.table_body .column1{
+	border-left: none;
+	border-top:none;
+	}
+.table_body .column4{
+	border-right: none;
+	border-top:none;
+	}
+.table_body tr:last-child .column1{
+	border-radius: 0px 0px 0px 7px;
+	color:#fed700;
+	font-family: "Poppins";
+	font-weight: bold;
+	border:none;
+}
+.table_body tr:last-child .column2{
+	border:none;
+}
+.table_body tr:last-child .column3{
+	border:none;
+}
+.table_body tr:last-child .column4{
+	border-radius: 0px 0px 0px 0px;
+	color:#fed700;
+	font-family: "Poppins";
+	font-weight: bold;
+	border:none;
+}
+
+
+
+.place_order_footer{
+	display: flex;
+	justify-content: center;
+}
+.place_order_button_wrapper{
+	width:60vw;
+	display: flex;
+	justify-content: flex-end;
+}
+.place_order_button_wrapper a{
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 2em;
+	background: #2b2b3d;
+	padding:1rem;
+	color:white;
+	border-radius: 0px 0px 5px 40px;
+}
+.place_order_button_wrapper a:hover{
+	background: #27274b;
+	transition: 0.5s;
+	color:#fed700;
+}
