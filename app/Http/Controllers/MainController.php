@@ -35,7 +35,7 @@ class MainController extends Controller
     }
     public function category($code){
         $category = Category::where('code',$code)->first();
-        $products = Product::where('category_id',$category->id)->latest()->get();
+        $products = Product::where('id',$category->id)->latest()->get();
         return view('category',compact('category','products'));
     }
 

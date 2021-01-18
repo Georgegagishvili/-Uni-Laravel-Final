@@ -137,7 +137,6 @@ class AdminController extends Controller
             'name' => 'required',
             'code' => 'required|unique:products,code',
             'description' => 'required',
-            'category_id' => 'required',
             'price' => 'required',
             'image' => 'required|mimes:jpeg,png|max:10240',
         ]);
@@ -151,7 +150,6 @@ class AdminController extends Controller
     		"name"=>$request->input("name"),
     		"code"=>$request->input("code"),
     		"description"=>$request->input("description"),
-            "category_id"=>$request->input("category_id"),
             "price"=>$request->input("price"),
             "image"=>$image_url,
     	]);

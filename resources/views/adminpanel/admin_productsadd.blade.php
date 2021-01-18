@@ -4,10 +4,10 @@
 	<div class="container card" style = "margin-top:5%">
 		<form action = "{{route('storeproducts')}}" method = 'POST' enctype="multipart/form-data">
 			@csrf
-		  <div class="form-group">
+{{-- 		  <div class="form-group">
 		    <label style = 'margin-top:1%'>Category Id</label>
 		    <input type="text" class="form-control"name="category_id">	    
-		  </div>
+		  </div> --}}
 		  <div class="form-group">
 		    <label style = 'margin-top:1%'>Name</label>
 		    <input type="text" class="form-control"name="name">	    

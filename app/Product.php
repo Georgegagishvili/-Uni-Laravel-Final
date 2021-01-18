@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-    	'category_id','name','code','image','price','description',
+    	'name','code','image','price','description',
     ];
 
     public function categories(){
@@ -15,7 +15,7 @@ class Product extends Model
     }
 
     public function getCategory(){
-    	return Category::find($this->category_id);
+    	return Category::find($this->id);
     }
 
     public function getPriceForCount(){
