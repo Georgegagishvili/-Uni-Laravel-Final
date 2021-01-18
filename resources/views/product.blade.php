@@ -10,7 +10,9 @@
         </div>
 
         <div class = 'product_card_right'>
-            <p class = 'product_category_name'>{{$product->getCategory()->name}}</p>
+            <p class = 'product_category_name'>@foreach($product->categories as $category)
+            {{$category->name}},
+            @endforeach</p>
             <span class = 'product_product_name'>{{$product->name}}</span>
             <p class = 'product_description'>Product Description:</p>
             <pre class = 'product_description_text'>{{$product->description}}</pre>

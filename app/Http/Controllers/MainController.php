@@ -12,6 +12,7 @@ use Auth;
 class MainController extends Controller
 {
     public function index(Request $request){
+        $categories = Category::get();
         $productsQuery = Product::query()->latest();
 
         if($request->filled('price_from')){
@@ -40,10 +41,11 @@ class MainController extends Controller
 
     // Product
     public function product($category,$productCode){
+        $categories = Category::get();
         $product = Product::where('code',$productCode)->first();
         $comments = Comment::where('product_id',$product->id)->get();
 
-        return view('product', compact('product','comments')); 
+        return view('product', compact('product','comments','categories')); 
     }
 // product-comments
 

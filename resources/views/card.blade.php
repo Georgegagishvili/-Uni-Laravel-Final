@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class = 'card-right'>
-          <p class = 'card-category-name'>{{$product->getCategory()->name}}</p>
+          <p class = 'card-category-name'>@foreach($product->categories as $category){{$category->name}}, @endforeach</p>
           <h2>{{$product->name}}</h2>
           <span>{{$product->price}} $</span>
           <pre class = 'card-description'>{{$product->description}}</pre>

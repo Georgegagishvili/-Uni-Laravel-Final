@@ -119,11 +119,20 @@ class AdminController extends Controller
     }
 
     public function addproducts(){
-    	return view('adminpanel/admin_productsadd');
+        $categories = Category::get();
+    	return view('adminpanel/admin_productsadd',compact('categories'));
     }
 
 
     public function storeproducts(Request $request){
+        $all_categories = Category::all();
+        $product_categories = array();
+        foreach($all_categories as $category){
+            if($request->has($category->id)){
+                array_push($product_categories,$category->id);
+            }
+        }
+
         $request->validate([
             'name' => 'required',
             'code' => 'required|unique:products,code',
@@ -146,6 +155,8 @@ class AdminController extends Controller
             "price"=>$request->input("price"),
             "image"=>$image_url,
     	]);
+
+        Product::latest()->first()->categories()->sync($product_categories);
         return redirect()->route('adminproducts');
 
     }

@@ -29,6 +29,11 @@
 			 <textarea class="form-control" rows="3" name = 'description'></textarea>
 		  </div>
 
+		  @foreach($categories as $category)
+		  <input type="checkbox" value = '{{$category->id}}'name = "{{$category->id}}">
+		  <label for = '{{$category->code}}'>{{$category->code}}</label>
+		  @endforeach
+
 		  <button style ='margin-bottom: 1%' type="submit" class="btn btn-primary">Submit</button>
 		  
 		</form>
